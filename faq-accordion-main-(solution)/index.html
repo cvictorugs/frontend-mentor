@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.">
+        <title>faq-accordion-main</title>
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="icon" href="./assets/images/favicon-32x32.png" type="image/jpg">
+    </head>
+    <body>
+        <div class="background-container">            
+            <div class="overlay-content">
+                <div class="overlay-sub-content">
+                    <div class="faq-header">
+                        <div>
+                            <img src="assets/images/icon-star.svg" alt="image" width="50%">
+                        </div>
+                        <div>
+                            <h4>FAQs</h4>
+                        </div>
+                    </div>
+                    <div class="faq-body">
+                        <div >
+                            <p class="text-bld question-1">
+                                What is Front Mentor, and how will it hep me?    
+                            </p>
+                            <button onclick="toggle()" id="dropdown-switch">
+                                <img id="collapseImage" class="toggleImage" src="assets/images/icon-minus.svg" alt="image">
+                            </button>
+                        </div>
+                        <div id='dropdown-container'>
+                            <p class="text-sm answer-1 " id="dropdown-content">
+                                Frontend Mentor offers realistic coding challenges to 
+                                help developers improve their frontend coding skills with 
+                                projects in HTML, CSS and Javascript. It's suitable for
+                                all levels and ideal for portfolio building. 
+                            </p>
+                        </div>
+                    
+                        <div class="border-top">
+                                
+                            <p class="text-bld question-2">
+                                Is Frontend Mentor free? 
+                            </p>
+                            <p class="frontend"></p>
+                            <button >
+                                <img id="expandImage1" class="toggleImage" src="assets/images/icon-plus.svg" alt="image">
+                            </button>
+                        </div>
+    
+                        <div class="border-top">
+                            <p  class="text-bld question-3">
+                                Can I use Frontend Mentor projects in my portfolio?
+                            </p>                            
+                            <img id="expandImage" class="toggleImage" src="assets/images/icon-plus.svg" alt="image">
+                        </div>
+
+                        
+                        <div class="border-top">
+                            <p class="text-bld question-4">
+                                How can i get help if I'm stuck on a challenge?
+                            </p>
+                            <img id="expandImage" class="toggleImage" src="assets/images/icon-plus.svg" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <script src="scripts/index.js"></script>
+
+    </body>
+</html>

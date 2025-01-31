@@ -1,0 +1,2 @@
+So, it is advised to use stateless components more often, since they are side-effect free and will create the same
+behaviour always.  // difference btwn stateless & stateful functions ?

@@ -1,0 +1,7 @@
+.empty-cart-img-ctn{
+    background-color: olive;
+    width: 100%;
+    height: 20%;
+    display: grid;
+    place-items: center;
+}

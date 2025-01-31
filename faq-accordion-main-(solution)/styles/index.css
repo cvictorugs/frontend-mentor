@@ -1,0 +1,120 @@
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+@font-face {
+    font-family: 'WorkSans-Italic-VariableFont_wght';
+    src: url('../assets/fonts/WorkSans-Italic-VariableFont_wght.ttf')
+    format('truetype');
+}
+@font-face {
+    font-family: 'WorkSans-VariableFont_wght';
+    src: url('../assets/fonts/WorkSans-VariableFont_wght.ttf')
+    format('truetype');
+}
+/*............ General styles........... */
+body, html {
+    height: 100%;
+    background-color: rgba(138, 135, 135, 0.192);
+}
+
+button{
+    background-color: white;
+    border: none;
+}
+.background-container {
+    /* Set the background image */
+    background-image: url('../assets/images/background-pattern-desktop.svg'); /* Replace with your image URL */
+    image-resolution:cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    height: 50vh; /* Full viewport height */
+    position: relative; /* Set position relative for positioning child elements */
+}
+
+.overlay-content {
+    /* Style for the overlay content */
+    position: absolute; /* Position absolutely within the parent */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);/* Adjust to perfectly center
+    color:black; /* Text color */
+    text-align: left; /* Center the text */
+    /* background: rgba(, , , .5); Add a semi-transparent background for better readability */
+    /* padding: 20px; Add some padding */
+    border-radius: 8px; /* Optional: round the corners */
+
+    background-color: #fff;
+    height:auto;
+    width: auto  ;
+    box-shadow: 0 20px 10px  rgba(128, 128, 128, 0.5);
+}
+.overlay-sub-content{
+    padding: 20px;
+    width:auto;
+}
+.faq-header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 2rem;
+}
+
+
+/* Text Fonts */
+.text-bld{
+    font-family: bold;
+    font-size: 15px;
+}
+.text-sm{
+    font-size: 12px;
+    color: grey;
+    padding-bottom: 15px;
+}
+
+.faq-body div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.faq-body .border-top{
+    
+    border-top-width: 1px;
+    border-top-style:ridge;
+}
+
+/*........... Media Query........ */
+
+/* iphone SE */
+@media(max-width: 667px){
+ 
+    *{
+        padding: 0; margin: 0; box-sizing: border-box;
+    }
+    
+    body, html {
+        height: 100%;
+        background-color: rgba(138, 135, 135, 0.192);
+        /* margin: 0; */
+    }
+    .overlay-content{
+        width: 90%;
+        height: 7zz0vh;
+        margin-bottom: 5rem;
+        box-shadow: 0 20px 10px  rgba(128, 128, 128, 0.5);
+    }
+    .question-1, .question-2,.question-3,.question-4{
+        /* font-family: 'WorkSans-Italic-VariableFont_wght',sans-serif; */
+        font-family: 'WorkSans-VariableFont_wght',sans-serif;
+    }
+    .answer-1{
+        font-family: 'WorkSans-VariableFont_wght',sans-serif;
+
+    }
+    .overlay-sub-content{
+        padding:10px;
+    }
+ 
+    .text-sm{
+        color: grey;
+    } 
+}

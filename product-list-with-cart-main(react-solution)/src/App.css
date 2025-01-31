@@ -1,0 +1,42 @@
+.basket{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+    
+}
+.left-ctn{
+    height: 100%;
+    width: 70%;
+}
+h1{
+    /* height: auto; */
+}
+
+.right-ctn{
+    background-color: green;
+    height: 100%;
+    width: 30%;
+}
+@media (max-width:375px) {
+    .left-ctn{
+        /* background-color: blue; */
+        width: 100%;
+        height: 90%;
+    }
+    .right-ctn{
+        /* height: auto; */
+        width: 100%;
+        height: 10%;
+        background-color: greenyellow;
+
+    }
+    .basket{
+        grid-template-columns: none;
+        height: 98%;
+        /* grid-template-rows: 1fr 1fr 1fr; */
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+
+
+}
