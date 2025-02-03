@@ -1,0 +1,52 @@
+#active-state-ctn{
+    /* display: flex; */
+    
+}
+#active-state-ctn .sub-ctn{
+    border-bottom: 1px var(--Rose-300) solid;
+    margin-bottom: 1rem;
+    gap: 5rem;
+
+    /* border-bottom-color: ; */
+}
+#active-state-ctn div:first-child{
+    /* display: flex; */
+
+}
+#active-state-ctn .sub-ctn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+#active-state-ctn button{
+    /* background-color: green; */
+    height: 20px;
+    color: red;
+    border-radius: 10px;
+    width:20px;
+}
+#active-state-ctn button:hover{
+    cursor:pointer;
+}
+#active-state-ctn img{
+    /* width: 50px; */
+
+}
+.food-name{
+    margin-bottom: 0.5rem;
+}
+.food-details{
+    display: flex;
+    gap: 1rem;
+}
+
+.order-total-ctn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.carbon-neutral-ctn{
+    display: flex;
+    justify-content: space-between;
+}

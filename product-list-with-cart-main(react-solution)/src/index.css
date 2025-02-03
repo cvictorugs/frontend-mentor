@@ -21,52 +21,103 @@
     --Weights: 400, 600, 700;
     /* > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma. The design file for this challenge also includes a design system and tablet layout to help you build a more accurate solution faster. */
 }
-
 *{box-sizing: border-box;padding: 0;margin: 0;}
-
+/*............. element selectors....................... */
 h1{color: var(--Rose-900);}
+h2{
+    color: var(--Red);
+    padding-bottom:1rem ;
+}
+.left-ctn button{
+    /* background-color: white; */
+    width: 120px;
+    border-radius: 50px;
+    border: gray 1px solid;
+    position: absolute;
+    bottom:-15px ;
+    left: 30px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 12px;
+}
+.left-ctn button:hover{
+    cursor: pointer;
+    background-color: var(--Red);
+
+}
+/* 
 .red-button{
     cursor: pointer;
     background-color: var(--Red);
+} */
+ /*...................... font size & color..................... */
+.sm-tex{
+    font-size: 4px;
+    color: blue;
+}
+.lg-text{
+    font-size: 25px;
 }
 .grey-text{
-    color: var(--Rose-300);
+    color: var(--Rose-100);
     font-size: var(--Font-size-product-names);
+}
+.lighter-grey-text{
+    color: var(--Rose-400);
+}
+.light-grey-text{
+    color: var(--Rose-500);
 }
 .md-text{
     color: var(--Rose-900);
     font-size: 17px;
 }
-
+/* ........................................................ */
 html,body{
     height: 100%;
     width: 100%;
-    /* width: var(--Desktop); */
-
+    overflow: hidden;
+    /* width: var(--Desktop); ?????????*/
 }
 body{
     display: grid; place-items: center;
-    background-color: var(--Rose-100);
+    background-color: var(--Rose-300);
 }
-
 #root{
-    background-color: grey;
-    /* height: 86%; width: 90%; */
-    height: 90%; 
+    /* height: 80%;     */
+    /* display: grid; */
+    /* place-content: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
     width: 70%;
     display: flex;
     gap: 1rem;
+    /* margin-bottom: 5rem; */
+    /* margin: 5rem 0; */
 }
-
-/* Media Queries */
+/* .................Media Queries ...................*/
 /* Iphone SE */
 @media (max-width:375px){
+    html,body{
+        overflow: auto;
+    }
     #root{
         flex-direction: column;
         width: 100%;
         height: 100%;
-        gap: 0.5rem;
+        /* gap: 0.5rem; */
         padding: 1rem;
-        gap: 1.5rem;
+        /* gap: 1.5rem; */
+        /* gap: 5rem; */
+        justify-content: space-between;
+    }
+    .cart-btn{
+        position: absolute;
+        bottom:-15px ;
+        left: 90px;
+        z-index: 10;
     }
 }
+/* .................................................... */

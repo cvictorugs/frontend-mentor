@@ -3,19 +3,33 @@ import './waffles.css'
 import WafflesImage from '../../../assets/images/image-waffle-desktop.jpg'
 import CartImage from '../../../assets/images/icon-add-to-cart.svg'
   
-const updateCart = () =>{
-  alert('yoo')
-}
 
+// function updateWafflesCart(){
+//   // alert('yoo')
+//   document.getElementById('empty-cart-ctn').style.display = 'none';
+//   console.log(this)
+//   // document.getElementById()
+// }
+
+let count = 0;
 const MenuTab = () => {
+  // count +=1;
+  // Number(count)
+  const updateWafflesCart = () => {
+    document.getElementById('empty-cart-ctn').style.display = 'none';
+    document.getElementById('cart-quantity').textContent = `${count++}`
+    
+    // document.getElementById()
+  }
   return (
     <div className="food-tab-ctn">
       <div className='food-tab'>
-        <div className='food-pic'>
-          <img width={200} height={90} src={WafflesImage} alt="Waffles Image" />
+        <div className='food-pic' id='waffles-food-pic'>
+          <img src={WafflesImage} alt="Waffles Image" />
         </div>
+        {/* width={200} height={90}  */}
         <div id="waffles-cart-btn-ctn" className="cart-button-ctn" >
-          <button id="waffles-cart-btn"  onClick={updateCart} >
+          <button id="waffles-cart-btn" className='cart-btn' onClick={updateWafflesCart} >
             <img  className='add-to-cart' src={CartImage} alt="Cart Image" />
             <p id="add-to-cart-text">Add to Cart</p>
           </button> 

@@ -1,6 +1,18 @@
 import './App.css'
-import Waffles from './components/menu-tabs/waffles/Waffles'
 import EmptyCart from './components/cart-status/empty-cart/EmptyCart'
+import ActiveState from './components/cart-status/active-state/ActiveState'
+
+import Waffles from './components/menu-tabs/waffles/Waffles'
+import Baklava from './components/menu-tabs/baklava/Baklava'
+import Cake from './components/menu-tabs/cake/Cake'
+import CremeBrulee from './components/menu-tabs/creme-brulee/CremeBrulee'
+import Macaron from './components/menu-tabs/macaron/Macaron'
+import Tiramisu from './components/menu-tabs/tiramisu/Tiramisu'
+import Pie from './components/menu-tabs/pie/Pie'
+import Brownie from './components/menu-tabs/brownie/Brownie'
+import PannaCotta from './components/menu-tabs/panna-cotta/PannaCotta'
+
+
 
 let foodArray = [
   { foodName: 'waffles', foodDescription: 'Waffle with Berries', price: 6.50, amount: 0, foodPic: './assets/images/image-waffle-thumbnail.jpg' },
@@ -18,29 +30,31 @@ function App() {
   return (
     <>
       <div className="left-ctn">
-        <h1>Dessert</h1>
+        <h1>Desserts</h1>
         <div className="basket">
-          <Waffles/> <Waffles/>
-          <Waffles/> <Waffles/>
-          <Waffles/> <Waffles/>
-          <Waffles/> <Waffles/>
           <Waffles/>
+          <CremeBrulee/>
+          <Macaron/>
+          <Tiramisu/>
+          <Baklava/>
+          <Pie/>
+          <Cake/>
+          <Brownie/>
+          <PannaCotta/>
         </div>
       </div>
       <div className="right-ctn">
-        <div className="cart-status-ctn">
-          <div id="cart-quantity">
-            <h3>Your Cart(0)</h3>
+        <div className="sub-div">
+          <div >
+            <h2>Your Cart (<span id="cart-quantity">0</span>)</h2>
           </div>
-          <EmptyCart/>
-
+          <div className="cart-status-ctn">
+            {/* <EmptyCart/> */}
+            <ActiveState/>
+          </div>
         </div>
       </div>
-        
-        
-        
     </>
   )
 }
-
 export default App
